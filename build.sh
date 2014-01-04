@@ -18,4 +18,5 @@ echo $CCPREFIX
 # Linaro toolchain
 # export CCPREFIX="${tool_dir}/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian/bin/arm-linux-gnueabihf-"
 
-make ARCH=arm CROSS_COMPILE=${CCPREFIX} -j5
+echo "make ARCH=arm CROSS_COMPILE=${CCPREFIX} -j8"
+make ARCH=arm CROSS_COMPILE=${CCPREFIX} -j8
